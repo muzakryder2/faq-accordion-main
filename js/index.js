@@ -35,7 +35,7 @@ faqItems.map(faq => {
 
   const faqIconEl = document.createElement('img')
   faqHeaderEl.addEventListener('click', expandFaq)
-  faqIconEl.src = '../assets/images/icon-plus.svg'
+  faqIconEl.src = 'https://muzakryder2.github.io/faq-accordion-main/assets/images/icon-plus.svg'
   faqIconEl.alt = 'expand icon'
 
   faqHeaderEl.appendChild(titleEl)
@@ -59,10 +59,10 @@ answers.map(item => {
 })
 
 faqIcons.map(icon => {
-  icon.src = '../assets/images/icon-plus.svg'
+  icon.src = 'https://muzakryder2.github.io/faq-accordion-main/assets/images/icon-plus.svg'
 })
 
 const targetAnswer = e.currentTarget
 targetAnswer.nextElementSibling.classList.remove('hidden')
-targetAnswer.querySelector('img').src = '../assets/images/icon-minus.svg'
+targetAnswer.querySelector('img').src = 'https://muzakryder2.github.io/faq-accordion-main/assets/images/icon-minus.svg'
 }
