@@ -60,6 +60,7 @@ answers.map(item => {
 
 faqIcons.map(icon => {
   icon.src = './assets/images/icon-plus.svg'
+  icon.alt = 'expand icon'
 })
 
 const targetAnswer = e.currentTarget
