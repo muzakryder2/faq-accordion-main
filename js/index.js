@@ -35,7 +35,7 @@ faqItems.map(faq => {
 
   const faqIconEl = document.createElement('img')
   faqHeaderEl.addEventListener('click', expandFaq)
-  faqIconEl.src = '../assets/images/icon-plus.svg'
+  faqIconEl.src = './assets/images/icon-plus.svg'
   faqIconEl.alt = 'expand icon'
 
   faqHeaderEl.appendChild(titleEl)
@@ -59,10 +59,11 @@ answers.map(item => {
 })
 
 faqIcons.map(icon => {
-  icon.src = '../assets/images/icon-plus.svg'
+  icon.src = './assets/images/icon-plus.svg'
 })
 
 const targetAnswer = e.currentTarget
 targetAnswer.nextElementSibling.classList.remove('hidden')
-targetAnswer.querySelector('img').src = '../assets/images/icon-minus.svg'
+targetAnswer.querySelector('img').src = './assets/images/icon-minus.svg'
+targetAnswer.querySelector('img').alt = 'collapse icon'
 }
